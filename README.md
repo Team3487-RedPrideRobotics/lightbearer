@@ -14,7 +14,7 @@ Lightbearer is an LED control system that runs primarily on an Arduino. In its c
 Currently, Lightbearer includes an idle pattern (slow rainbow), full red, full blue, full purple, full yellow, and celebration pattern (fast rainbow).
 
 ## Getting Started
-First, wire your LED strip to power, ground, and a data pin on the arduino. The, open the "1_Lightbearer.ino" file in the arduino IDE and change ```RGB_PIN```, ```RGB_LED_NUM```, ```BRIGHTNESS```, ```CHIP_SET```, and ```COLOR_CODE``` to match your setup. After this, plug the Arduino into a USB port on the rio. 
+First, wire your LED strip to power, ground, and a data pin on the arduino. The, open the "1_Lightbearer.ino" file in the arduino IDE and change ```RGB_PIN```, ```RGB_LED_NUM```, ```BRIGHTNESS```, ```CHIP_SET```, and ```COLOR_CODE``` to match your setup. After this, flash it to the rio, and plug the Arduino into a USB port on the rio. 
 
 ## Usage
 An example for rio code control is included in this repository as a subsystem that should be plug-and-play with most command-based Java code bases. Essentially, the rio's code should set up a serial connection over the USB the arduino is connected on with a baud of 9600. Then, when the rio needs to change the LED pattern, it should write a byte array to the serial port corresponding to the pattern desired by the user
